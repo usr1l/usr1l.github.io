@@ -1778,6 +1778,7 @@ body.is-preload #footer {
 }
 
 #profile-image {
-	max-height: 275px;
+	max-height: 250px;
 	max-width: 200px;
+	border-radius: 1rem;
 }
