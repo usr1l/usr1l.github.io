@@ -1326,6 +1326,7 @@ body.is-article-visible #bg:after {
 	width: 100%;
 	padding: 4rem 2rem;
 	z-index: 3;
+	/* border: #1b1f22 20px solid; */
 }
 
 #wrapper:before {
@@ -1360,7 +1361,7 @@ body.is-article-visible #bg:after {
 /* Header */
 
 #header {
-	display: -moz-flex;
+	/* display: -moz-flex;
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
@@ -1375,13 +1376,15 @@ body.is-article-visible #bg:after {
 	-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 	-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 	-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-	transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+	transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out; */
 	/* background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
 	background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
 	background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
 	background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%); */
-	max-width: 100%;
-	text-align: center;
+	width: 100%;
+	display: flex;
+	height: 100%;
+	border: #1b1f22 10px solid;
 }
 
 #header>* {
@@ -1792,11 +1795,46 @@ body.is-preload #footer {
 /* Home */
 #home {
 	border: #1b1f22 1px solid;
-	height: auto;
-	width: auto;
+	position: relative;
 	display: flex;
+	width: 100%;
+	justify-content: center;
 }
 
-#left {
+#left,
+#right {
 	width: 50%;
+}
+
+
+#about-me,
+#projects,
+#resume,
+#contact {
+	font-family: "Big Shoulders Inline Text";
+	font-weight: 800;
+	font-size: 8rem;
+}
+
+@media screen and (max-width: 1280px) {
+
+	#about-me,
+	#projects,
+	#resume,
+	#contact {
+		font-size: 3.5rem;
+
+	}
+
+}
+
+@media screen and (max-width: 540px) {
+
+	#about-me,
+	#projects,
+	#resume,
+	#contact {
+		font-size: 2rem;
+
+	}
 }
