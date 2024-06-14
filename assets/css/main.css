@@ -1727,19 +1727,30 @@ body.is-preload #footer {
 
 /* Home */
 #home {
-	border: #1b1f22 1px solid;
+	/* border: #1b1f22 1px solid; */
 	position: relative;
 	display: flex;
 	width: 100%;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 }
 
-#left,
-#right {
-	width: 50%;
+#left {
+	display: flex;
+	flex-direction: column;
+	margin-top: auto;
+	margin-bottom: 6rem;
+	padding: 2rem;
+	margin-left: auto;
 }
 
+#left {
+	width: 45%;
+}
+
+#right {
+	width: 45%;
+}
 
 #about-me,
 #projects,
@@ -1747,7 +1758,21 @@ body.is-preload #footer {
 #contact {
 	font-family: "Big Shoulders Inline Text";
 	font-weight: 800;
-	font-size: 7rem;
+	font-size: 5.5rem;
+}
+
+#left1 {
+	display: flex;
+	font-size: 20pt;
+	width: 100%;
+}
+
+#left1 div {
+	min-width: 5rem;
+}
+
+#left3 {
+	font-size: 16pt
 }
 
 @media screen and (max-width: 1280px) {
@@ -1757,9 +1782,24 @@ body.is-preload #footer {
 	#resume,
 	#contact {
 		font-size: 3.5rem;
-
+		padding-left: 1rem;
 	}
 
+	#left1 {
+		font-size: 14pt;
+	}
+
+	#left2 {
+		font-size: 13pt;
+	}
+
+	#left3 {
+		font-size: 12pt;
+	}
+
+	#left {
+		margin-bottom: 2rem;
+	}
 }
 
 @media screen and (max-width: 540px) {
@@ -1769,6 +1809,26 @@ body.is-preload #footer {
 	#resume,
 	#contact {
 		font-size: 2rem;
+		padding-left: 1rem;
+	}
 
+	#left {
+		margin-bottom: 2rem;
+	}
+
+	#left1 {
+		font-size: 7pt;
+	}
+
+	#left2 {
+		font-size: 6pt;
+	}
+
+	#left3 {
+		font-size: 6pt;
+	}
+
+	#left {
+		margin-bottom: 1rem;
 	}
 }
