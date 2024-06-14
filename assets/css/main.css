@@ -1604,7 +1604,7 @@ body.is-preload #header .content .inner {
 	position: relative;
 	width: 40rem;
 	max-width: 100%;
-	background-color: rgba(27, 31, 34, 0.85);
+	background-color: rgba(20, 20, 20, 0.68);
 	/* background-color: white; */
 	border-radius: 4px;
 	opacity: 0;
@@ -1866,4 +1866,8 @@ body.is-preload #footer {
 	#left {
 		margin-bottom: 0rem;
 	}
+}
+
+article p {
+	color: aliceblue;
 }
